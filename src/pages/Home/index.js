@@ -5,6 +5,7 @@ import {MdFlightTakeoff} from 'react-icons/md'
 import './style.css'
 
 import api from '../../services/api'
+import { addReserve } from '../../store/modules/reserve/actions'
 
 export default function Home() {
 
@@ -25,10 +26,7 @@ export default function Home() {
   }, [])
 
   function handleAdd(trip){
-    dispatch({
-      type: 'ADD_RESERVE',
-      trip
-    })
+    dispatch(addReserve(trip))
   }
 
   return (
