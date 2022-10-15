@@ -59,7 +59,7 @@ export default function Reservas() {
         ))}
 
         <footer>
-          <button type='button'>Solicitar Reservas</button>
+          <button type='button' onClick={()=> alert('Reservas solicitadas com sucesso')}>Solicitar Reservas</button>
         </footer>
     </div>
   )
